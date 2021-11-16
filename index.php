@@ -1,5 +1,6 @@
 <?php
 
+require_once './commons/app_config.php';
 require_once './dao/system_dao.php';
 $url = isset($_GET['url']) ? $_GET['url'] : "/";
 switch ($url) {
