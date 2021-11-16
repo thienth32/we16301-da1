@@ -2,8 +2,9 @@
 function account_index(){
     $sql = "select * from users";
     $users = executeQuery($sql);
-    $businessView = "./views/admin/account/index.php";
-    include_once './views/admin/layouts/main.php';
+    admin_render('account/index.php', [
+        'dsTaiKhoan' => $users,
+    ]);
 }
 
 ?>

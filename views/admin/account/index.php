@@ -6,7 +6,7 @@
         <th>Email</th>
     </thead>
     <tbody>
-        <?php foreach($users as $u): ?>
+        <?php foreach($dsTaiKhoan as $u): ?>
             <tr>
                 <td><?= $u['id'] ?></td>
                 <td><?= $u['name'] ?></td>
