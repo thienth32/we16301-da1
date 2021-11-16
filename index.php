@@ -1,5 +1,6 @@
 <?php
 
+require_once './dao/system_dao.php';
 $url = isset($_GET['url']) ? $_GET['url'] : "/";
 switch ($url) {
     case '/':
@@ -7,10 +8,12 @@ switch ($url) {
         index();
         break;
     case 'cp-admin/dashboard':
-        echo "Trang quản trị";
+        require_once './business/admin/dashboard.php';
+        dashboard_info();
         break;
     case 'cp-admin/tai-khoan':
-        echo "Quản trị tài khoản";
+        require_once "./business/admin/account.php";
+        account_index();
         break;
     default:
         echo "Đường dẫn bạn đang truy cập chưa được định nghĩa";
