@@ -17,6 +17,10 @@ switch ($url) {
         require_once "./business/admin/account.php";
         account_index();
         break;
+    case 'cp-admin/tai-khoan/tao-moi':
+        require_once "./business/admin/account.php";
+        account_add_form();
+        break;
     case 'cp-admin/tai-khoan/xoa':
         require_once "./business/admin/account.php";
         account_remove();

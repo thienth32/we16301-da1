@@ -2,10 +2,10 @@
 <table class="table table-stripped">
     <thead>
         <th>ID</th>
-        <th>Name</th>
+        <th>Họ và tên</th>
         <th>Email</th>
         <th>
-
+        <a href="<?= ADMIN_URL . 'tai-khoan/tao-moi' ?>" class="btn btn-sm btn-success">Tạo mới</a>
         </th>
     </thead>
     <tbody>
