@@ -17,6 +17,10 @@ switch ($url) {
         require_once "./business/admin/account.php";
         account_index();
         break;
+    case 'cp-admin/tai-khoan/xoa':
+        require_once "./business/admin/account.php";
+        account_remove();
+        break;
     default:
         echo "Đường dẫn bạn đang truy cập chưa được định nghĩa";
         break;
