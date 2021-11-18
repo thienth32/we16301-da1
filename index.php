@@ -25,6 +25,14 @@ switch ($url) {
         require_once "./business/admin/account.php";
         account_save_add();
         break;
+    case 'cp-admin/tai-khoan/sua':
+        require_once "./business/admin/account.php";
+        account_edit_form();
+        break;
+    case 'cp-admin/tai-khoan/luu-sua':
+        require_once "./business/admin/account.php";
+        account_save_edit();
+        break;
     case 'cp-admin/tai-khoan/xoa':
         require_once "./business/admin/account.php";
         account_remove();

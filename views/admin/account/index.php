@@ -19,6 +19,7 @@
                     <img src="<?= PUBLIC_ASSETS . $u['avatar'] ?>" width="100">
                 </td>
                 <td>
+                    <a href="<?= ADMIN_URL . 'tai-khoan/sua?id=' . $u['id'] ?>" class="btn btn-sm btn-info">Sửa</a>
                     <a href="<?= ADMIN_URL . 'tai-khoan/xoa?id=' . $u['id'] ?>" class="btn btn-sm btn-danger">Xóa</a>
                 </td>
             </tr>
