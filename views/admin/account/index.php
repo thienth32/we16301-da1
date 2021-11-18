@@ -4,6 +4,7 @@
         <th>ID</th>
         <th>Họ và tên</th>
         <th>Email</th>
+        <th>Avatar</th>
         <th>
         <a href="<?= ADMIN_URL . 'tai-khoan/tao-moi' ?>" class="btn btn-sm btn-success">Tạo mới</a>
         </th>
@@ -14,6 +15,9 @@
                 <td><?= $u['id'] ?></td>
                 <td><?= $u['name'] ?></td>
                 <td><?= $u['email'] ?></td>
+                <td>
+                    <img src="<?= PUBLIC_ASSETS . $u['avatar'] ?>" width="100">
+                </td>
                 <td>
                     <a href="<?= ADMIN_URL . 'tai-khoan/xoa?id=' . $u['id'] ?>" class="btn btn-sm btn-danger">Xóa</a>
                 </td>

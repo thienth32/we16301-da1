@@ -1,4 +1,4 @@
-<form action="">
+<form action="<?= ADMIN_URL . 'tai-khoan/luu-tao-moi' ?>" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="col-6 offset-3">
             <div class="form-group">
@@ -21,7 +21,7 @@
             <div class="d-flex justify-content-center">
                 <a href="<?= ADMIN_URL . 'tai-khoan'?>" class="btn btn-sm btn-danger">Hủy</a>
                 &nbsp;  
-                <button type="button" class="btn btn-primary btn-sm">Lưu</button>
+                <button type="submit" class="btn btn-primary btn-sm">Lưu</button>
             </div>
         </div>
     </div>
