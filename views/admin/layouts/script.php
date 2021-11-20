@@ -20,6 +20,8 @@
 <!-- daterangepicker -->
 <script src="<?= ADMIN_ASSETS ?>plugins/moment/moment.min.js"></script>
 <script src="<?= ADMIN_ASSETS ?>plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?= ADMIN_ASSETS ?>plugins/sweetalert2/sweetalert2.min.js"></script>
+
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?= ADMIN_ASSETS ?>plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
