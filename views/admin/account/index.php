@@ -20,7 +20,10 @@
                 </td>
                 <td>
                     <a href="<?= ADMIN_URL . 'tai-khoan/sua?id=' . $u['id'] ?>" class="btn btn-sm btn-info">Sửa</a>
-                    <a href="javascript:;" onclick="confirm_before_remove('<?= ADMIN_URL . 'tai-khoan/xoa?id=' . $u['id'] ?>', '<?= $u['name'] ?>')" class="btn btn-sm btn-danger">Xóa</a>
+                    <a href="javascript:;" 
+                        data-url="<?= ADMIN_URL . 'tai-khoan/xoa?id=' . $u['id'] ?>" 
+                        data-name="<?= $u['name'] ?>" 
+                        class="btn btn-sm btn-danger btn_remove_account">Xóa</a>
                 </td>
             </tr>
         <?php endforeach ?>
