@@ -1,6 +1,6 @@
 <?php
 
-function admin_render($viewpath, $data = []){
+function admin_render($viewpath, $data = [], $jsFiles = []){
 
     extract($data);
     $businessView = "./views/admin/" . $viewpath;
