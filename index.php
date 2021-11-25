@@ -3,6 +3,11 @@
 require_once './commons/app_config.php';
 require_once './commons/helpers.php';
 require_once './dao/system_dao.php';
+
+require_once './vendor/PHPMailer/src/Exception.php';
+require_once './vendor/PHPMailer/src/PHPMailer.php';
+require_once './vendor/PHPMailer/src/SMTP.php';
+
 $url = isset($_GET['url']) ? $_GET['url'] : "/";
 switch ($url) {
     case '/':
@@ -36,6 +41,14 @@ switch ($url) {
     case 'cp-admin/tai-khoan/xoa':
         require_once "./business/admin/account.php";
         account_remove();
+        break;
+    case 'cp-admin/send-email':
+        require_once "./business/admin/sendmail.php";
+        email_form();
+        break;
+    case 'cp-admin/send-email/submit':
+        require_once "./business/admin/sendmail.php";
+        submit_email();
         break;
     default:
         echo "Đường dẫn bạn đang truy cập chưa được định nghĩa";
