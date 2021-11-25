@@ -18,6 +18,10 @@ switch ($url) {
         require_once './business/admin/dashboard.php';
         dashboard_info();
         break;
+    case 'cp-admin/goi-mon':
+        require_once './business/admin/order.php';
+        table_order();
+        break;
     case 'cp-admin/tai-khoan':
         require_once "./business/admin/account.php";
         account_index();
