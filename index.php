@@ -22,6 +22,14 @@ switch ($url) {
         require_once './business/admin/order.php';
         table_order();
         break;
+    case 'cp-admin/san-pham/tao-moi':
+        require_once './business/admin/product.php';
+        product_add_form();
+        break;
+    case 'cp-admin/san-pham/luu-tao-moi':
+        require_once './business/admin/product.php';
+        product_save_add();
+        break;
     case 'cp-admin/tai-khoan':
         require_once "./business/admin/account.php";
         account_index();
